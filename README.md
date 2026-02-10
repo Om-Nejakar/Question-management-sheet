@@ -1,16 +1,75 @@
-# React + Vite
+# Interactive Question Management Sheet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page web application inspired by Codolio / Striver DSA sheets that allows users to browse, manage, and organize questions hierarchically by **Topic → Sub-topic → Questions**.
 
-Currently, two official plugins are available:
+The application focuses on **clean UI, structured data handling, and interactive UX**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Full-width accordion-style topic sections
+- Expand / collapse topics
+- Display questions in a clean row-based layout
+- Difficulty badges (Easy / Medium / Hard)
+- Tag display (sub-topics)
+- Real dataset support (Codolio API–like structure)
+- Scalable component-based architecture
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Data Handling
+
+The provided dataset is a **flat list of questions** with fields like:
+- `topic`
+- `subTopic`
+- `questionId`
+
+---
+
+## 🧩 Tech Stack
+
+- **React** (Vite)
+- **Zustand** (state management)
+- **Tailwind CSS** (styling)
+- **JavaScript (ES6+)**
+
+---
+
+## 📂 Project Structure
+- src/
+- ├── components/
+- │ ├── Topic.jsx
+- │ ├── QuestionRow.jsx
+- │
+- ├── store/
+- │ └── sheetStore.js
+- │
+- ├── utils/
+- │ └── transformSheet.js
+- │
+- ├── data/
+- │ └── sheetData.json // dataset file
+- │
+- ├── App.jsx
+- ├── main.jsx
+- └── index.css
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd <repo-name>
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the application
+```bash
+npm run dev
+```
+
