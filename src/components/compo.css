@@ -1,0 +1,11 @@
+.Topic {
+    height : auto;
+    width: 100% !important;
+    border: 2px solid red;
+    display: block;
+    margin: 10px;
+}
+h2 {
+    display: inline !important;
+    width: 60%;
+}
